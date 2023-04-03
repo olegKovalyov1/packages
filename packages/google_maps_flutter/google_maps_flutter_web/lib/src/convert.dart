@@ -296,8 +296,7 @@ gmaps.MarkerOptions _markerOptionsFromMarker(
   gmaps.Marker? currentMarker,
 ) {
   return gmaps.MarkerOptions()
-    ..position = currentMarker?.position ??
-        gmaps.LatLng(
+    ..position = gmaps.LatLng(
           marker.position.latitude,
           marker.position.longitude,
         )
